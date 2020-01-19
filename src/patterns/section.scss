@@ -1,0 +1,20 @@
+.section {
+	&_indent-b {
+		$sizes: 'xxl', 'xxxxl';
+		@each $size in $sizes {
+			&_#{$size} {
+				margin-bottom: var(--space-#{$size});
+			}
+		}
+	}
+
+	&_space-v {
+		$sizes: 'xxl', 'xxxxl';
+		@each $size in $sizes {
+			&_#{$size} {
+				padding-top: var(--space-#{$size});
+				padding-bottom: var(--space-#{$size});
+			}
+		}
+	}
+}

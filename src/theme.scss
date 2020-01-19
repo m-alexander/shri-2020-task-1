@@ -1,0 +1,93 @@
+.theme {
+
+	--image-placeholder: url('./img/image-placeholder-primary.svg');
+	background-color: var(--background-default);	
+
+	&_color {
+		&_project-default {
+			--background-default: #FFFFFF;
+			--background-accent: #ffcc00;
+			--background-border: #000000;
+
+			--text-primary: #000000;
+			--text-secondary: rgba(0, 0, 0, 0.6);
+			--text-alternate: rgba(0, 0, 0, 0.3);
+			--text-link: #0077ff;
+		}
+
+		&_project-brand {
+			--background-default: #0077ff;
+			--background-accent: #FFFFFF;
+			--background-border: #FFFFFF;
+
+			--text-primary: #FFFFFF;
+			--text-secondary: rgba(255, 255, 255, 0.6);
+			--text-alternate: rgba(255, 255, 255, 0.3);
+			--text-link: #FFFFFF;
+
+			--image-placeholder: url('./img/image-placeholder-inverse.svg');
+		}
+
+		&_project-inverse {
+			--background-default: #000000;
+			--background-accent: #FFFFFF;
+			--background-border: #FFFFFF;
+
+			--text-primary: #FFFFFF;
+			--text-secondary: rgba(255, 255, 255, 0.6);
+			--text-alternate: rgba(255, 255, 255, 0.3);
+			--text-link: #0077ff;
+
+			--image-placeholder: url('./img/image-placeholder-inverse.svg');
+		}
+
+		&_project-warning {
+			--background-default: #ff3333;
+			--background-accent: #FFFFFF;
+			--background-border: #ff3333;
+
+			--text-primary: #FFFFFF;
+			--text-secondary: rgba(255, 255, 255, 0.6);
+			--text-alternate: rgba(255, 255, 255, 0.3);
+			--text-link: #FFF;
+		}
+	}
+	
+	&_size {
+		&_default {
+			--size-text-s: 8px;
+			--size-text-m: 10px;
+			--size-text-l: 11px;
+			--size-text-xl: 13px;
+			--size-text-xxl: 16px;
+
+			--size-line-s: 21px;
+			--size-line-m: 25px;
+			--size-line-l: 28px;
+			--size-line-xl: 34px;
+			--size-line-xxl: 38px;
+		}
+	}
+	
+	&_space {
+		&_default {
+			--space-xxxs: 3px;
+			--space-xxs: 6px;
+			--space-xs: 9px;
+			--space-s: 15px;
+			--space-m: 18px;
+			--space-l: 24px;
+			--space-xl: 27px;
+			--space-xxl: 36px;
+			--space-xxxl: 45px;
+			--space-xxxxl: 51px;
+			--space-xxxxxl: 72px.
+		}
+	}
+	
+	&_gap {
+		&_small {
+			--gap: var(--space-xl);
+		}
+	}
+}

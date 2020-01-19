@@ -1,0 +1,79 @@
+.list {
+	display: flex;
+	flex-direction: column;
+		
+	&_border {
+		border: solid 3px var(--background-default);
+	}
+
+	&_view {
+		&_default {
+			background: var(--background-default);
+		}
+	}
+
+	&__item {
+		&_border {
+			&_bottom:not(:last-child) {
+				border-bottom: solid 3px var(--background-border);
+			}
+
+			&_top:not(:first-child) {
+				border-top: solid 3px var(--background-border);
+			}
+		}
+
+		&_distribute {
+			&_between {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+
+		&_vertical-align {
+			&_center {
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		&_indent-t {
+			$sizes: 'm';
+			@each $size in $sizes {
+				&_#{$size} {
+					margin-top: var(--space-#{$size});
+				}
+			}
+		}
+
+
+		&_indent-b {
+			$sizes: 's';
+			@each $size in $sizes {
+				&_#{$size} {
+					margin-bottom: var(--space-#{$size});
+				}
+			}
+		}
+
+		&_space-b {
+			$sizes: 's';
+			@each $size in $sizes {
+				&_#{$size} {
+					padding-bottom: var(--space-#{$size});
+				}
+			}
+		}
+
+		&_space-a {
+			$sizes: 'm';
+			@each $size in $sizes {
+				&_#{$size} {
+					padding: var(--space-#{$size});
+				}
+			}
+		}
+
+	}
+
+}

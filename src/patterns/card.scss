@@ -1,0 +1,103 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&_border_all {
+		border: solid 1px var(--background-border);
+	}
+
+	&_view_default {
+		background: var(--background-default);
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	
+		&_distribute {
+			&_center {
+				justify-content: center;
+			}
+		}
+
+		&_vertical-align {
+			&_center {
+				align-items: center;
+			}
+		}
+
+		&_space-a {
+			&_m {
+				padding: var(--space-m);
+			}
+
+			&_xl {
+				padding: var(--space-xl);
+			}
+
+			&_l {
+				padding: var(--space-l);
+			}
+
+			&_xxl {
+				padding: var(--space-xxl);
+			}
+
+			&_xxxl {
+				padding: var(--space-xxxl);
+			}
+		}
+	}
+
+	&__footer {
+		display: flex;
+		flex-direction: column;
+	
+		&_distribute {
+			&_center {
+				justify-content: center;
+			}
+
+			&_between {
+				justify-content: space-between;
+			}
+
+			&_right {
+				justify-content: flex-end;
+			}
+		}
+
+		&_vertical-align {
+			&_center {
+				align-items: center;
+			}
+
+			&_top {
+				align-items: top;
+			}
+
+			&_bottom {
+				align-items: bottom;
+			}
+		}
+
+		&_space-a {
+			&_m {
+				padding: var(--space-m);
+			}
+
+			&_xl {
+				padding: var(--space-xl);
+			}
+
+			&_l {
+				padding: var(--space-l);
+			}
+
+			&_xxl {
+				padding: var(--space-xxl);
+			}
+		}
+	}
+}

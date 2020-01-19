@@ -1,0 +1,13 @@
+.history {
+	border: solid 3px var(--background-border);
+
+	&__details {
+		display: flex;
+    flex: 1;
+    align-items: center;
+	}
+
+	&__hide {
+		display: none;
+	}
+}

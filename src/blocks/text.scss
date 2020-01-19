@@ -1,0 +1,151 @@
+@mixin text-height($size) {
+	height: var(--size-text-#{$size});
+	--margin-size: calc(var(--size-line-#{$size}) - var(--size-text-#{$size}));
+	margin: calc(var(--margin-size) / 2) 0;
+}
+
+.text {
+	display: flex;
+	flex-wrap: wrap;
+
+	--text-color: var(--text-primary);
+
+	&_align {
+		&_center {
+			justify-content: center;
+		}
+	}
+
+	&__word {
+		display: inline-block;
+		background: var(--text-color);
+	}
+
+	&_size {
+		&_s {
+			.text__word {
+				@include text-height(s);
+
+				&_width {
+					&_s {
+						width: 20px;
+					}
+					&_m {
+						width: 48px;
+					}
+					&_l {
+						width: 100px;
+					}
+				}
+			}
+		}
+
+		&_m {
+			.text__word {
+				@include text-height(m);
+
+				&_width {
+					&_s {
+						width: 24px;
+					}
+					&_m {
+						width: 56px;
+					}
+					&_l {
+						width: 114px;
+					}
+				}
+			}
+		}
+
+		&_l {
+			.text__word {
+				@include text-height(l);
+	
+				&_width {
+					&_s {
+						width: 28px;
+					}
+					&_m {
+						width: 68px;
+					}
+					&_l {
+						width: 138px;
+					}
+				}
+			}
+		}
+
+		&_xl {
+			.text__word {
+				@include text-height(xl);
+
+				&_width {
+					&_s {
+						width: 32px;
+					}
+					&_m {
+						width: 74px;
+					}
+					&_l {
+						width: 154px;
+					}
+				}
+			}
+		}
+
+		&_xxl {
+			.text__word {
+				@include text-height(xxl);
+
+				&_width {
+					&_s {
+						width: 36px;
+					}
+					&_m {
+						width: 88px;
+					}
+					&_l {
+						width: 184px;
+					}
+				}
+			}
+		}
+	}
+
+	&_type {
+		&_h1 {
+			margin: 18px 0 24px;
+		}
+
+		&_h2 {
+			margin: 45px 0 21px;
+		}
+
+		&_h3 {
+			margin: 42px 0 0;
+		}
+
+		&_p {
+			margin: 15px 0 21px;
+		}
+	}
+
+	&_view {
+		&_primary {
+			--text-color: var(--text-primary);
+		}
+
+		&_secondary {
+			--text-color: var(--text-secondary);
+		}
+
+		&_ghost {
+			--text-color: var(--text-alternate);
+		}
+
+		&_link {
+			--text-color: var(--text-link);
+		}
+	}
+}

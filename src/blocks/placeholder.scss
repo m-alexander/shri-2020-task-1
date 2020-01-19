@@ -1,0 +1,16 @@
+.placeholder {
+	display: inline-block;
+	
+	&_size {
+		&_m {
+			width: 72px;
+			height: 72px;
+		}
+	}
+
+	&_view {
+		&_primary {
+			background: var(--text-primary);
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.form {
+	&_border {
+		&_all {
+			border: solid 3px var(--background-border);
+		}
+	}
+
+	&_view {
+		&_default {
+			background: var(--background-default);
+		}
+	}
+
+	&__item {
+		&_border {
+			&_bottom {
+				border-bottom: solid 3px var(--background-border);
+			}
+		}
+
+		&:last-child &_border {
+			&_bottom {
+				border: none;
+			}
+		}
+
+		&_distribute {
+			&_between {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+
+		&_vertical-align {
+			&_center {
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		&_indent-b {
+			$sizes: 'xxxs', 'xxs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl';
+			@each $size in $sizes {
+				&_#{$size}:not(:last-child) {
+					margin-bottom: var(--space-#{$size});
+				}
+			}
+		}
+
+		&_space-h {
+			$sizes: 'xxxs', 'xxs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl';
+			@each $size in $sizes {
+				&_#{$size} {
+					padding-left: var(--space-#{$size});
+					padding-right: var(--space-#{$size});
+				}
+			}
+		}
+
+		&_space-v {
+			$sizes: 'xxxs', 'xxs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl';
+			@each $size in $sizes {
+				&_#{$size} {
+					padding-top: var(--space-#{$size});
+					padding-bottom: var(--space-#{$size});
+				}
+			}
+		}
+	}
+
+	&__label {
+		&_width {
+			&_default {
+				width: 35%;
+			}
+		}
+	}
+
+	&__control {
+		display: flex;
+		justify-content: flex-end;
+		flex: 1;
+	}
+}

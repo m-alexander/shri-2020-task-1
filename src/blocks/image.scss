@@ -1,0 +1,9 @@
+.image {
+	width: 100%;
+	height: auto;
+	border: solid 3px var(--background-border);
+	background-color: var(--background-default);
+	background-image: var(--image-placeholder);
+	background-repeat: no-repeat;
+	background-position: center;
+}

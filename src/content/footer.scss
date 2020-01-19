@@ -1,0 +1,11 @@
+.footer {
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: var(--space-xxxl) 0;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+}

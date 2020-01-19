@@ -4,7 +4,9 @@
   "description": "Project stub for BEMJSON render",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+		"start": "node index.js",
+		"build": "sass src/index.scss build/style.css --style compressed",
+		"watch": "sass --watch src/index.scss build/style.css"
   },
   "author": "",
   "license": "ISC",

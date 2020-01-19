@@ -1,0 +1,11 @@
+.cover {
+	min-height: 472px;
+
+	&__preview + &__text {
+		margin-top: var(--space-l);
+	}
+
+	&__preview .image {
+		height: 180px;
+	}
+}

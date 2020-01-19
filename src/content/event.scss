@@ -1,0 +1,15 @@
+.event {
+	min-height: 400px;
+
+	&__preview {
+		margin-bottom: var(--space-xxl);
+	
+		& > div:not(:last-child) {
+			margin-right: var(--space-xs);
+		}
+	}
+
+	&__title + &__description {
+		margin-top: var(--space-s);
+	}
+}
