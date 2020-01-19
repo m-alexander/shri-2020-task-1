@@ -1,0 +1,21 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Index_page_0_document_0_pc.png",
+        "test": "../bitmaps_test/20200113-174618/backstop_default_Index_page_0_document_0_pc.png",
+        "selector": "document",
+        "fileName": "backstop_default_Index_page_0_document_0_pc.png",
+        "label": "Index page",
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost:3000/index",
+        "expect": 0,
+        "viewportLabel": "pc",
+        "error": "Reference file not found /home/alexander/projects/yndx-shri/shri-2020-task-1-master/stub/backstop_data/bitmaps_reference/backstop_default_Index_page_0_document_0_pc.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "backstop_default"
+}
