@@ -2,6 +2,7 @@
 	min-height: 400px;
 
 	&__preview {
+		display: flex;
 		margin-bottom: var(--space-xxl);
 	
 		& > div:not(:last-child) {
@@ -11,5 +12,9 @@
 
 	&__title + &__description {
 		margin-top: var(--space-s);
+	}
+
+	&__footer {
+		padding-top: 0;
 	}
 }

@@ -2,6 +2,10 @@
 	min-height: 300px;
 	border: solid 3px var(--background-border);
 
+	&__title {
+		padding-bottom: 46px;
+	}
+
 	.image {
 		height: 160px;
 	}

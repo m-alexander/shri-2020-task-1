@@ -1,7 +1,6 @@
 @mixin text-height($size) {
 	height: var(--size-text-#{$size});
-	--margin-size: calc(var(--size-line-#{$size}) - var(--size-text-#{$size}));
-	margin: calc(var(--margin-size) / 2) 0;
+	margin: var(--size-text-margin-#{$size});
 }
 
 .text {

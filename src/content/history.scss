@@ -1,6 +1,14 @@
 .history {
 	border: solid 3px var(--background-border);
 
+	&__transaction {
+		padding: 16px var(--space-m);
+	}
+
+	&__show {
+		margin-top: 0;
+	}
+
 	&__details {
 		display: flex;
     flex: 1;
